@@ -1,0 +1,31 @@
+.address-search {
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+
+.address-book {
+  padding-top: 20px;
+}
+
+.column-header {
+  cursor: pointer;
+  &:hover {
+    background-color: lightgrey;
+  }
+}
+
+.invalid {
+  border: 1px solid red;
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+.sort-column {
+  background-color: lightblue;
+}
+
+.address-pagination {
+  display: flex;
+  padding-top: 20px;
+  justify-content: space-between;
+}

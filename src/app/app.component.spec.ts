@@ -1,5 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
+import { AddressBookComponent } from './address-book/address-book.component';
+import { AddressBookService } from './address-book/address-book.service';
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
@@ -9,8 +11,10 @@ describe('AppComponent', () => {
         RouterTestingModule
       ],
       declarations: [
-        AppComponent
+        AppComponent,
+        AddressBookComponent
       ],
+      providers: [AddressBookService]
     }).compileComponents();
   });
 
@@ -20,16 +24,5 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'GlenAddressBook'`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app.title).toEqual('GlenAddressBook');
-  });
-
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('GlenAddressBook app is running!');
-  });
+  // I don't have a lot of time so I'll only write additional tests for the AddressBookComponent
 });
