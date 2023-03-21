@@ -8,22 +8,22 @@ This project was completed as part of a previous interview test for a senior Ang
 
 ## TEST REQUIREMENTS
 Use Angular or React framework
-● You must make use of the RXJS library.
-● Support from zero to a “large number” of entries.
-● Store address entries in memory
-● Entries should contain:
-○ A first and last name.
-○ An optional phone number.
-● Provide functionality to:
-○ Add an entry.
-○ Remove an entry.
-○ Retrieve entries in alphabetical order, sorted by first name.
-○ Retrieve entries in alphabetical order, sorted by last name.
-○ Retrieve entries whose first or last name exactly or partially match a supplied search string,
+- You must make use of the RXJS library.
+- Support from zero to a “large number” of entries.
+- Store address entries in memory
+- Entries should contain:
+  - A first and last name.
+  - An optional phone number.
+- Provide functionality to:
+  - Add an entry.
+  - Remove an entry.
+  - Retrieve entries in alphabetical order, sorted by first name.
+  - Retrieve entries in alphabetical order, sorted by last name.
+  - Retrieve entries whose first or last name exactly or partially match a supplied search string,
 from the beginning of the name (e.g. searching for “Dan” would match any entries with
 “Daniel” as well as any “Dan”).
-■ Make this matching case insensitive.
-● Provide a unit test for at least one component
+    - Make this matching case insensitive.
+- Provide a unit test for at least one component
 
 ## Issues
 My goal was to complete the test within the alloted time, I focused on my use of RxJS and Jasmine unit testing.
